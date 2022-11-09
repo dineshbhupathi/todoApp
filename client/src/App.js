@@ -9,7 +9,7 @@ function App() {
   const [desc, setDesc] = useState('')
 
   useEffect(() => {
-    axios.get('https://sampletodoappfortesting97.herokuapp.com/api/todo')
+    axios.get('/api/todo')
       .then(res => {
         setTodoList(res.data)
       })
